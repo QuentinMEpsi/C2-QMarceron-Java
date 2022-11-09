@@ -1,0 +1,64 @@
+// Pour les boucles
+break --> sortie forcée de la boucle
+continue --> renvoi forcée au test //pour la boucle for l'instruction de fin de boucle est executée
+
+// Boucle sans test
+for (;;) {}
+// On peu mettre des instruction de fin de boucle même si il n'y à pas de test
+
+// Les instructions de fin de boucles peuvent être multiple il suffit de séparer par une virgule
+
+// En java la notion de fonction n'existe pas en tant que tel
+// Tout bloc de code doit être déclarer à l'intérieur d'une Class
+
+// La méthode est défini comme ceci :
+TypeRetour nomDeLaMéthode (TypeA nomArgument1, Type2 nomArgument2, ...) {}
+// Si la méthode n'effectue qu'un traitement et ne renvoie pas de valeur, son type retour est void
+// La liste des arguments est optionnelle, elle n'est nécessaire que quand le traitement à l'intérieur de la méthode
+requiert des paramètres extérieur
+
+// Les possibilitées de visibilité d'une méthode :
+- private
+- public
+- protected
+- ou rien
+
+// Le transtypage est de convertir d'un type à un autre
+TypeSouhaité MaVariable = (TypeSouhaité) MaVariable
+// Le compilateur va se bloquer si il pense qu'un type ne peut pas être converti vers un autre :
+- valeur trop grande (un long dans un int, un double dans un float)
+- perte potentielle de décimales (un flottant vers un entier)
+- Type incompatible par nature (un int dans un char)
+
+// Longueur d'une variable
+.length()
+
+// Concaténation chaîne de caractère
+string uneChaine = "Yolooo";
+uneAutreChaine += " !!!";
+// OU
+string uneChaine = "Yolooo";
+uneAutreChaine += uneAutreChaine.concat(" !!!");
+
+// Attention à la comparaison de string l'opérateur == n'est pas adapté aux type de référence!
+Utiliser la méthode .equals()
+
+// Déclaration d'un tableau
+Type[] monTableau
+// Initialisation de 25 int, chaque cellule
+// Contient la valeur par défaut du type
+// new est le mot clef de création d'un objet
+int[] monTableau = new int[25];
+// Initialisation avec des cellules "pré remplies"
+// Par une liste de valeur, façon littérale
+String[] mesChaines = {"Un", "Deux", "Trois"};
+
+// Une collection est un conteneur uniforme d'éléments
+// Contrairement aux tableaux (de taille fixe), une collection permet de rajouter des éléments à l'intérieur
+du conteneur
+// Il existe plusieurs grands types de collections en fonction des besoins :
+- Lies Listes : conteneurs Ordonnés, ils sont basés sur un index pour accéder à un élément
+- Les Sets : c'est un type de conteneur permettant de garantir l'unicité des éléments à l'intérieur
+- Les Maps (Ou dictionnaires) : chaque élément dans la collection est associé à une clef. on parle de collection Clef/Valeur
+- Les Queues et Piles : Elles permettent de gérer les éléments dans la collection en fonction de
+leur ordre d'ajout dans celle-ci
